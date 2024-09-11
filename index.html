@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side (kept empty as per instructions) -->
+        <div class="left"></div>
+
+        <!-- Right Side Content -->
+        <div class="right">
+            <!-- Tabs Section -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('about')">About Me</button>
+                <button class="tab" onclick="switchTab('experience')">Experiences</button>
+                <button class="tab" onclick="switchTab('recommended')">Recommended</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="content" id="about">
+                <p>Hello! I'm Dave, your sales rep from Salesforce. I've been working at this awesome company for 3 years now.</p>
+                <p>Born and raised in Albany, NY. Living in Santa Carla for 10 years with my wife and twin daughters.</p>
+            </div>
+            <div class="content hidden" id="experience">
+                <p>I have over 5 years of experience in sales and customer relationships.</p>
+            </div>
+            <div class="content hidden" id="recommended">
+                <p>Here are some of my top recommendations for team collaboration tools...</p>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-images" id="gallery-images">
+                    <!-- Images will be dynamically added here -->
+                </div>
+                <button class="add-image-btn" onclick="addImage()">+ Add Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
